@@ -103,7 +103,7 @@ if img_file_buffer is not None:
                     st.image(mask_sucio, caption='MASK', width = 220)
                 with col33:
                     pix_im = (int(height_2)-int(height_1))*(int(width_2)-int(width_1))
-                    pix_mask = np.int(np.sum(mask_sucio/255))
+                    pix_mask = int(np.sum(mask_sucio/255))
                     # 1 píxel - 0.00311 cm
                     area_tot_mm2 = ((int(height_2)-int(height_1))*0.00311)*((int(width_2)-int(width_1))*0.00311)
                     st.sidebar.header('Área total: ' + "{:.2f}".format(area_tot_mm2) + ' cm2')
