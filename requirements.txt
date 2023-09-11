@@ -4,5 +4,5 @@ Pillow
 plotly-express
 streamlit-drawable-canvas
 matplotlib
-opencv-python
+opencv-python-headless
 scipy
