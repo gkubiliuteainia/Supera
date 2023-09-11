@@ -1,29 +1,15 @@
 import streamlit as st
-import time
 import os
+from os import path
+from os import walk
 import numpy as np
 import pandas as pd
 from PIL import Image
 import plotly.express as px
 from streamlit_drawable_canvas import st_canvas
-
-from mpl_toolkits.mplot3d import Axes3D
-from matplotlib import cm
-from matplotlib import colors
-import numpy as np
 import matplotlib.pyplot as plt
 import cv2
-from datetime import datetime
 from scipy import ndimage
-from os import walk
-from os import path
-
-# ML
-import joblib
-from sklearn.cluster import KMeans
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import classification_report, confusion_matrix, ConfusionMatrixDisplay
 
 
 basepath = r'G:\SUPERA'
