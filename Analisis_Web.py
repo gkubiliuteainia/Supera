@@ -14,6 +14,8 @@ from scipy import ndimage
 
 basepath = r'G:\SUPERA'
 
+st.text(basepath)
+
 path_name = st.sidebar.text_input('Folder name', 'Robot')
 folder_path = os.path.join(basepath, path_name)  # Construye la ruta usando os.path.join
 
