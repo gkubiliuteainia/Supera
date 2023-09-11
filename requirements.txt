@@ -4,7 +4,7 @@ pandas
 Pillow
 plotly-express
 streamlit-drawable-canvas
-mpl-toolkits.mplot3d
+mpl-toolkits
 matplotlib
 opencv
 scipy
