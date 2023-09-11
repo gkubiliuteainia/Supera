@@ -1,12 +1,8 @@
-python-time
 numpy
 pandas
 Pillow
 plotly-express
 streamlit-drawable-canvas
-mpl-toolkits
 matplotlib
 opencv
 scipy
-joblib
-scikit-learn
