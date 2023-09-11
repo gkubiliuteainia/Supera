@@ -24,10 +24,11 @@ with cold: width_2 = st.text_input('Width 2', '2500')
 tab1, tab2 = st.tabs(["Analysis", "Image"])
 
 if img_file_buffer is not None:
-    img = img_array[int(height_1):int(height_2),int(width_1):int(width_2),:]
-    plaqueta = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+    
     image = Image.open(img_file_buffer)
     img_array = np.array(image) # if you want to pass it to OpenCV
+    img = img_array[int(height_1):int(height_2),int(width_1):int(width_2),:]
+    plaqueta = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
     with tab1:    
     
