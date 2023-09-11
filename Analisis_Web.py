@@ -13,7 +13,6 @@ from scipy import ndimage
 
 img_file_buffer = st.sidebar.file_uploader("Upload an image")
 
-
 option_colour = st.sidebar.selectbox('Colour model', ('HSV', 'RGB'))
 
 cola, colb, colc, cold = st.sidebar.columns(4)
@@ -22,12 +21,11 @@ with colb: width_1 = st.text_input('Width 1', '1400')
 with colc: height_2 = st.text_input('Height 2', '1900')
 with cold: width_2 = st.text_input('Width 2', '2500')
 
-img = img_array[int(height_1):int(height_2),int(width_1):int(width_2),:]
-plaqueta = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-
 tab1, tab2 = st.tabs(["Analysis", "Image"])
 
 if img_file_buffer is not None:
+    img = img_array[int(height_1):int(height_2),int(width_1):int(width_2),:]
+    plaqueta = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     image = Image.open(img_file_buffer)
     img_array = np.array(image) # if you want to pass it to OpenCV
 
